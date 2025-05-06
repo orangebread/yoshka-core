@@ -1,0 +1,108 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "definitions": {
+        "Evidence": {
+            "properties": {
+                "evidence_type": {
+                    "enum": [
+                        "Academic",
+                        "Journalism",
+                        "NGO",
+                        "Primary"
+                    ],
+                    "type": "string"
+                },
+                "pillar": {
+                    "enum": [
+                        "Community",
+                        "Environment",
+                        "Governance",
+                        "Labour",
+                        "Other"
+                    ],
+                    "type": "string"
+                },
+                "severity": {
+                    "enum": [
+                        "High",
+                        "Low",
+                        "Medium"
+                    ],
+                    "type": "string"
+                },
+                "source": {
+                    "properties": {
+                        "date": {
+                            "type": "string"
+                        },
+                        "publisher": {
+                            "type": "string"
+                        },
+                        "title": {
+                            "type": "string"
+                        },
+                        "url": {
+                            "type": "string"
+                        }
+                    },
+                    "type": "object"
+                },
+                "statement": {
+                    "type": "string"
+                }
+            },
+            "type": "object"
+        }
+    },
+    "properties": {
+        "concerns": {
+            "items": {
+                "$ref": "#/definitions/Evidence"
+            },
+            "type": "array"
+        },
+        "meta": {
+            "properties": {
+                "brand": {
+                    "properties": {
+                        "name": {
+                            "type": "string"
+                        },
+                        "slug": {
+                            "type": "string"
+                        },
+                        "website": {
+                            "type": "string"
+                        }
+                    },
+                    "type": "object"
+                },
+                "last_updated": {
+                    "type": "string"
+                },
+                "schema_version": {
+                    "const": 1,
+                    "type": "number"
+                }
+            },
+            "type": "object"
+        },
+        "naics": {
+            "type": "string"
+        },
+        "ownership_chain": {
+            "items": {
+                "type": "string"
+            },
+            "type": "array"
+        },
+        "positive_signals": {
+            "items": {
+                "$ref": "#/definitions/Evidence"
+            },
+            "type": "array"
+        }
+    },
+    "type": "object"
+}
+

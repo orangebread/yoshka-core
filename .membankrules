@@ -1,0 +1,24 @@
+# .membankrules for yoshka-core
+
+## Key Decisions
+- Initialized project with standard directory structure (`schema`, `brands`, `corps`, `api`, `etl`, `.github/workflows`, `docs`).
+- Initialized Memory Bank with core files (`projectbrief.md`, `productContext.md`, `activeContext.md`, `systemPatterns.md`, `techContext.md`, `progress.md`) and `journal` directory.
+
+## Project Patterns
+(To be populated as patterns emerge)
+
+## User Preferences
+(To be populated based on user interactions and feedback)
+- Follows Windows conventions (backslashes, PowerShell syntax, CRLF).
+- Prefers comprehensive planning and efficient API usage.
+- Emphasizes code quality (syntax, formatting, error handling, security).
+- Requires thorough Memory Bank maintenance.
+
+## Known Challenges
+(To be populated as challenges are identified)
+
+## Decision Evolution
+(To be populated as decisions evolve)
+
+## Tool Usage Patterns
+(To be populated based on tool usage)

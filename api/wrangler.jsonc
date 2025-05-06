@@ -1,0 +1,12 @@
+{
+	"$schema": "node_modules/wrangler/config-schema.json",
+	"name": "yoshka-api",
+	"main": "src/index.ts",
+	"compatibility_date": "2025-05-02",
+	"kv_namespaces": [
+	  {
+		"binding": "BRANDS",
+		"id": "225892e7372a4a49b0234949ea2ef3cd"
+	  }
+	]
+}
